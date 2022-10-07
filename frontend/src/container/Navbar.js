@@ -6,7 +6,7 @@ function Navbar() {
     <header>
       <div className='container'>
         <NavLink to='/'>
-          Workout List
+          <h1>Workout List</h1>
         </NavLink>
       </div>
     </header>

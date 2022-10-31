@@ -18,7 +18,7 @@ function Home() {
     //     .then(data => dispatch({type: 'SET_WORKOUTS', payload: data}))
     //     .catch(error => console.log(error))
       
-      const response = await fetch('/api/workouts/')
+      const response = await fetch('http://13.231.132.155:8080/api/workouts/')
       const json = await response.json()
       if (response.ok) {
         dispatch({type: 'SET_WORKOUTS', payload: json})
